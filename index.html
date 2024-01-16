@@ -1,27 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partage de penses-bêtes</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <main>
-      <header>
-        <img class="header-logo" src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png">
-        <h2 class="header-title">Partage de penses-bêtes</h2>
-      </header>
-      <div>
-        <form id="form" autocomplete="off">
-          <input type="text" id="input" placeholder="Ajouter une note">
-          <input type="text" id="input" placeholder="Ajouter une note">
-          <div id="form_buttons">
-            <button id="button" type="submit">Ajouter</button>
-            <button id="button" type="reset">Annuler</button>
+<html>
+    <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap"></link>
+      <link rel="stylesheet" href="style.css"></link>  
+    </head>
+    <body>
+       <main>
+          <header>
+              <img class="header-logo" src="https://raw.githubusercontent.com/Gieltie/12--portfolio-temp/4a79f0c08091d6ba453034b90174361b1f3d7ab2/frontend/src/assets/logo-gael.svg">
+              <h2 class="header-title">Pense-bêtes</h2>
+          </header>     
+          <div id="form-container">
+              <form id="form" autocomplete="off">
+                 <input id="note-title" placeholder="Titre" type="text">
+                 <input id="note-text" placeholder="Ecriver ici..." type="text"> 
+                 <div id="form-buttons">
+                    <button type="submit" id="submit-button">Termine</button> 
+                    <button type="button" id="form-close-button">Fermer</button> 
+                 </div>
+              </form>              
           </div>
-        </form>
-      </div>
-    </main>
-  </body>
+          <div id="notes"></div>
+          <div id="placeholder">
+              <img id="placeholder-logo" src="https://icon.now.sh/lightbulb_outline">
+              <p id="placeholder-text">Les notes apparaiterons ici</p>
+          </div>
+       </main>
+       <script src="app.js"></script>" 
+    </body>
 </html>
