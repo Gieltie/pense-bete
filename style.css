@@ -29,15 +29,8 @@ main {
   flex-direction: column;
 }
 
-#placeholder-logo {
-  height: 120px;
-  margin: 20px;
-  opacity: 0.1;
-  width: 120px;
-}
-
 #placeholder-text {
-  color: #000000;
+  color: #80868b;
   cursor: default;
   font-size: 1.375rem;
   font-weight: 400;
